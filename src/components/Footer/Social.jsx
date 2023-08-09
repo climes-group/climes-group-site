@@ -44,7 +44,6 @@ const MediaButton = styled.button`
 function Social() {
   return (
     <Root>
-      <h3>Social</h3>
       <ul>
         <li>
           <a href="https://twitter.com/PEO_HQ" target="_blank">

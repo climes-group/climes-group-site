@@ -1,10 +1,11 @@
-# React + Vite
+# Climes Group Site
 
 ## Get Started
 
 ### Pre-requisites
 
 - [NodeJS](https://nodejs.org/en)
+- [Git for Windows](https://git-scm.com/downloads)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 1. Clone the project
@@ -37,17 +38,3 @@ npm run build
 If successful, a /dist folder will be generated with site content.
 
 2. Deploy contents of /dist folder to web server
-
-## Todo
-
-- SEO
-- Accessibility (AODA)
-- Responsive
-- Language toggle
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

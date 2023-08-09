@@ -37,6 +37,11 @@ const PeoLogoContainer = styled.div`
     border-bottom: 1px solid #224352;
     align-items: center;
   }
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 `;
 
 const Auth = styled.div`
@@ -52,8 +57,13 @@ const ClimesLogo = styled.div`
 `;
 
 const FlexContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const Footer = () => {
@@ -70,12 +80,12 @@ const Footer = () => {
       </PeoLogoContainer>
       <FlexContainer>
         <ContactInfo />
-        <Social />
         <ClimesLogo>
           <Link to={""}>
             <img src={climesUrl} alt="Climes Group Engineering Inc. logo" />
           </Link>
         </ClimesLogo>
+        <Social />
       </FlexContainer>
     </Root>
   );
