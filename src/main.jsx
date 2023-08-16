@@ -9,6 +9,7 @@ import Purpose from "./pages/Purpose.jsx";
 import About from "./pages/About.jsx";
 import Services from "./pages/Services.jsx";
 import Contact from "./pages/Contact.jsx";
+import Sample from "./pages/Sample.jsx";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,17 @@ const router = createBrowserRouter([
             <Header selected="contact" />
             <MainPanel heading="Contact">
               <Contact />
+            </MainPanel>
+          </>
+        ),
+      },
+      {
+        path: "sample",
+        element: (
+          <>
+            <Header selected="sample" />
+            <MainPanel heading="Sample Page">
+              <Sample />
             </MainPanel>
           </>
         ),
