@@ -56,21 +56,37 @@ const vulnerabilityDataNodes = [
 export const nodes = [
   ...climateNodeData.map((node, i) => ({
     ...node,
+    data: {
+      ...node.data,
+      category: "climate",
+    },
     type: "custom",
     position: { x: 0, y: 75 * i },
   })),
   ...weatherNodeData.map((node, i) => ({
     ...node,
     type: "custom",
+    data: {
+      ...node.data,
+      category: "weather",
+    },
     position: { x: 500, y: 75 * i },
   })),
   ...hazardNodeData.map((node, i) => ({
     ...node,
+    data: {
+      ...node.data,
+      category: "hazard",
+    },
     type: "custom",
     position: { x: 1000, y: 75 * i },
   })),
   ...vulnerabilityDataNodes.map((node, i) => ({
     ...node,
+    data: {
+      ...node.data,
+      category: "vulnerability",
+    },
     type: "custom",
     position: { x: 1500, y: 75 * i },
   })),
