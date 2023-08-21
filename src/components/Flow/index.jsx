@@ -14,6 +14,7 @@ import {
   edges as initialEdges,
   nodes as initialNodes,
 } from "./utils/initial-data";
+import "./utils/reactflow-custom.css";
 
 const minimapStyle = {
   height: 120,
