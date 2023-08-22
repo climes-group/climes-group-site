@@ -9,7 +9,9 @@ import ReactFlow, {
 } from "reactflow";
 
 import "reactflow/dist/style.css";
+import { hasInputsOn2 } from "./utils";
 import CustomFlowNode from "./utils/CustomFlowNode";
+import CustomPrimaryEdge from "./utils/CustomPrimaryEdge";
 import {
   edges as initialEdges,
   nodes as initialNodes,
@@ -22,6 +24,10 @@ const minimapStyle = {
 
 const nodeTypes = {
   custom: CustomFlowNode,
+};
+
+const edgeTypes = {
+  custom: CustomPrimaryEdge,
 };
 
 function Flow() {
@@ -44,7 +50,55 @@ function Flow() {
     return edge;
   });
 
-  const handleNodeClick = useCallback(function (node) {}, []);
+  const handleNodeClick = useCallback(function onNodeClick(event, node) {
+    if (node.isPrimary || hasInputsOn2(node.id, nodes, edges)) {
+      setNodes((nds) => {
+        return nds.map((_node) => {
+          if (node.id === _node.id) {
+            return {
+              ..._node,
+              data: {
+                ..._node.data,
+                isActive: !_node.data?.isActive,
+              },
+            };
+          } else {
+            if (_node.data?.isActive && !hasInputsOn2(_node.id, nodes, edges)) {
+              return {
+                ..._node,
+                data: {
+                  ..._node.data,
+                  isActive: false,
+                },
+              };
+            } else {
+              return _node;
+            }
+          }
+          return _node;
+        });
+      });
+      setEdges((eds) =>
+        eds.map((_edge) => {
+          if (node.id === _edge.source) {
+            return {
+              ..._edge,
+              animated: !node.data?.isActive,
+            };
+          }
+
+          return _edge;
+        }),
+      );
+    } else {
+      console.warn(
+        `Conditions not met: [isPrimary] and [inputsMet], ${
+          node.isPrimary
+        }, ${hasInputsOn2(node.id, nodes, edges)}`,
+      );
+      console.warn(nodes, edges);
+    }
+  }, null);
 
   return (
     <ReactFlow
@@ -57,6 +111,7 @@ function Flow() {
       fitView
       attributionPosition="top-right"
       nodeTypes={nodeTypes}
+      edgeTypes={edgeTypes}
     >
       <MiniMap style={minimapStyle} zoomable pannable />
       <Controls />

@@ -58,41 +58,41 @@ export const nodes = [
     ...node,
     data: {
       ...node.data,
-      category: "climate",
+      nodeType: "climate",
     },
     type: "custom",
-    position: { x: 0, y: 75 * i },
+    position: { x: 0, y: 150 * i },
   })),
   ...weatherNodeData.map((node, i) => ({
     ...node,
     type: "custom",
     data: {
       ...node.data,
-      category: "weather",
+      nodeType: "weather",
     },
-    position: { x: 500, y: 75 * i },
+    position: { x: 500, y: 125 * i },
   })),
   ...hazardNodeData.map((node, i) => ({
     ...node,
     data: {
       ...node.data,
-      category: "hazard",
+      nodeType: "hazard",
     },
     type: "custom",
-    position: { x: 1000, y: 75 * i },
+    position: { x: 1000, y: 125 * i },
   })),
   ...vulnerabilityDataNodes.map((node, i) => ({
     ...node,
     data: {
       ...node.data,
-      category: "vulnerability",
+      nodeType: "vulnerability",
     },
     type: "custom",
-    position: { x: 1500, y: 75 * i },
+    position: { x: 1500, y: 100 * i },
   })),
 ];
 
-const allEdges = [
+const primaryEdges = [
   "c1-w1",
   "c1-w2",
   "c1-w3",
@@ -122,14 +122,40 @@ const allEdges = [
   "h2-v6",
 ];
 
+const secondaryEdges = [
+  "c3-w3",
+  "c5-w2",
+  "c6-w6",
+  "w2-h4",
+  "w4-h4",
+  "w5-h4",
+  "w7-h4",
+  "h1-v6",
+];
+
 export const edges = [
-  ...allEdges.map((edge) => {
+  ...primaryEdges.map((edge) => {
     const [source, target] = edge.split("-");
     return {
       id: edge,
       source,
       target,
-      //type: "custom",
+      data: {
+        type: "primary",
+      },
+      type: "custom",
+    };
+  }),
+  ...secondaryEdges.map((edge) => {
+    const [source, target] = edge.split("-");
+    return {
+      id: edge,
+      source,
+      target,
+      data: {
+        type: "secondary",
+      },
+      type: "custom",
     };
   }),
 ];

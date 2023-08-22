@@ -34,7 +34,7 @@ function Sample() {
           </p>
         </Row>
       </Block>
-      <Block height="500px">
+      <Block height="750px">
         <Flow />
       </Block>
     </>
