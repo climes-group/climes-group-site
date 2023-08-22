@@ -43,11 +43,15 @@ function Flow() {
 
     return edge;
   });
+
+  const handleNodeClick = useCallback(function (node) {}, []);
+
   return (
     <ReactFlow
       nodes={nodes}
       edges={edgesWithUpdatedTypes}
       onNodesChange={onNodesChange}
+      onNodeClick={handleNodeClick}
       onEdgesChange={onEdgesChange}
       onConnect={onConnect}
       fitView
