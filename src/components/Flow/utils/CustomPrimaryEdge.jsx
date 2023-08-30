@@ -19,6 +19,18 @@ const CustomPrimaryEdge = ({
     targetPosition,
   });
 
+  if (data.error) {
+    return (
+      <BaseEdge
+        id={id}
+        path={edgePath}
+        style={{
+          stroke: "red",
+        }}
+      />
+    );
+  }
+
   return (
     <>
       <BaseEdge id={id} path={edgePath} />
@@ -40,7 +52,7 @@ const CustomPrimaryEdge = ({
           </div>
         </EdgeLabelRenderer>
       ) : (
-        ""
+        <BaseEdge id={id} path={edgePath} />
       )}
     </>
   );

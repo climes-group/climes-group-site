@@ -70,7 +70,7 @@ export const nodes = [
       ...node.data,
       nodeType: "weather",
     },
-    position: { x: 500, y: 125 * i },
+    position: { x: 500, y: 150 * i },
   })),
   ...hazardNodeData.map((node, i) => ({
     ...node,
@@ -79,7 +79,7 @@ export const nodes = [
       nodeType: "hazard",
     },
     type: "custom",
-    position: { x: 1000, y: 125 * i },
+    position: { x: 1000, y: 150 * i },
   })),
   ...vulnerabilityDataNodes.map((node, i) => ({
     ...node,
@@ -88,7 +88,7 @@ export const nodes = [
       nodeType: "vulnerability",
     },
     type: "custom",
-    position: { x: 1500, y: 100 * i },
+    position: { x: 1500, y: 150 * i },
   })),
 ];
 
@@ -132,6 +132,8 @@ const secondaryEdges = [
   "w7-h4",
   "h1-v6",
 ];
+
+const customEdges = ["v6-v7"];
 
 export const edges = [
   ...primaryEdges.map((edge) => {
