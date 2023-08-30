@@ -9,4 +9,5 @@ export const PAGES = [
   { label: "About", url: "/about" },
   { label: "Services", url: "/services" },
   { label: "Contact", url: "/contact" },
+  { label: "Sample", url: "/sample" },
 ];

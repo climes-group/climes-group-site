@@ -9,7 +9,7 @@ import ReactFlow, {
 } from "reactflow";
 
 import "reactflow/dist/style.css";
-import { hasInputsOn2 } from "./utils";
+import { hasInputsOn2, isNodeActive } from "./utils";
 import CustomFlowNode from "./utils/CustomFlowNode";
 import CustomPrimaryEdge from "./utils/CustomPrimaryEdge";
 import {
@@ -51,7 +51,8 @@ function Flow() {
   });
 
   const handleNodeClick = useCallback(function onNodeClick(event, node) {
-    if (node.isPrimary || hasInputsOn2(node.id, nodes, edges)) {
+    const [hasInputsActive, inputEdges] = hasInputsOn2(node.id, nodes, edges);
+    if (node.isPrimary || hasInputsActive) {
       setNodes((nds) => {
         return nds.map((_node) => {
           if (node.id === _node.id) {
@@ -63,7 +64,8 @@ function Flow() {
               },
             };
           } else {
-            if (_node.data?.isActive && !hasInputsOn2(_node.id, nodes, edges)) {
+            const [hasInputsActive] = hasInputsOn2(_node.id, nodes, edges);
+            if (_node.data?.isActive && hasInputsActive) {
               return {
                 ..._node,
                 data: {
@@ -91,12 +93,25 @@ function Flow() {
         }),
       );
     } else {
-      console.warn(
-        `Conditions not met: [isPrimary] and [inputsMet], ${
-          node.isPrimary
-        }, ${hasInputsOn2(node.id, nodes, edges)}`,
-      );
+      console.warn(`Conditions not met`);
       console.warn(nodes, edges);
+      setEdges((eds) =>
+        eds.map((_edge) => {
+          if (node.id === _edge.target) {
+            return {
+              ..._edge,
+              data: {
+                error: isNodeActive(_edge.source, nodes) ? false : true,
+              },
+              animated: true,
+            };
+          }
+          return _edge;
+        }),
+      );
+      setTimeout(() => {
+        setEdges((eds) => edges.map((_edge) => _edge));
+      }, 500);
     }
   }, null);
 
