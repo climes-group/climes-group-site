@@ -1,7 +1,8 @@
 export const THEME = {
   ACCENT: "#E2B046",
-  PRIMARY: "#224352",
+  PRIMARY: "#345800",
   BKG: "#F0EFE3",
+  SECACCENT: "#224352"
 };
 
 export const PAGES = [
@@ -9,5 +10,5 @@ export const PAGES = [
   { label: "About", url: "/about" },
   { label: "Services", url: "/services" },
   { label: "Contact", url: "/contact" },
-  { label: "Sample", url: "/sample" },
+  //{ label: "Sample", url: "/sample" }, // <- This is how we comment out in JS
 ];

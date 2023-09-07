@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import peoImgUrl from "../../assets/logo-peo-en.png";
-import climesUrl from "../../assets/climes.jpg";
+import climesUrl from "../../assets/clime_tree_trans.png";
 import { THEME } from "../../utils";
 import Social from "./Social";
 import ContactInfo from "./ContactInfo";
@@ -54,6 +54,7 @@ const Auth = styled.div`
 const ClimesLogo = styled.div`
   align-self: center;
   margin: 1rem;
+  width: 50px;
 `;
 
 const FlexContainer = styled.div`
