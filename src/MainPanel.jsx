@@ -7,6 +7,7 @@ const Root = styled.main`
   @media (max-width: 767px) {
     padding: 0;
   }
+  flex-grow: 1;
 
   h1 {
     margin-top: 1.5em;
@@ -27,8 +28,7 @@ const StyledH1 = styled.h1`
 const Container = styled.div`
   margin: 0rem 4rem;
   padding: 0rem;
-  min-height: 25vh;
-
+  height: 100%;
   @media (max-width: 1024px) {
     margin: 0;
   }

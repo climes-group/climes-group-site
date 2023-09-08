@@ -1,19 +1,26 @@
-import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import climesBannerUrl from "./assets/logos/climes_group_engineering_high.jpg";
-import { PAGES, THEME } from "./utils";
+import climesBannerUrl from "../../assets/logos/climes_group_engineering_high.jpg";
+import { PAGES, THEME } from "../../utils";
 
 const ClimesBanner = styled.div`
-  display: block;
+  text-align: left;
+  padding: 1em 0em;
   img {
-    position: absolute;
     height: 100px;
-    top: 0;
-    left: 13px;
 
     @media (max-width: 1024px) {
       display: none;
+    }
+  }
+`;
+const ClimesLogoMobile = styled.div`
+  text-align: left;
+  img {
+    height: 100px;
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
     }
   }
 `;
@@ -28,9 +35,6 @@ const Root = styled.div`
 `;
 
 const MenuOl = styled.ol`
-  position: relative;
-  top: 3em;
-  right: 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -60,23 +64,16 @@ const MenuLi = styled.li`
   }
 `;
 
-const MobileOnly = styled.div`
-  display: none;
-  @media (max-width: 767px) {
-    display: block;
-  }
-  a {
-    color: #fff;
-  }
-`;
-
 const Header = ({ selected }) => {
   return (
     <>
       <Root>
         <ClimesBanner>
-          <img src={climesBannerUrl} alt="Climes Banner Image" />
+          <Link to="/">
+            <img src={climesBannerUrl} alt="Climes Banner Image" />
+          </Link>
         </ClimesBanner>
+        <ClimesLogoMobile></ClimesLogoMobile>
         <MenuOl>
           {PAGES.map((menuItem) => (
             <MenuLi key={`meni-item-${menuItem.label}`}>
@@ -85,13 +82,6 @@ const Header = ({ selected }) => {
           ))}
         </MenuOl>
       </Root>
-      <MobileOnly>
-        <Menu right>
-          {PAGES.map((menuItem) => (
-            <Link to={menuItem.url}>{menuItem.label}</Link>
-          ))}
-        </Menu>
-      </MobileOnly>
     </>
   );
 };

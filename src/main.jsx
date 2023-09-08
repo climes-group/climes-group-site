@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
-import Header from "./Header.jsx";
 import MainPanel from "./MainPanel.jsx";
+import Header from "./components/Header/index.jsx";
 import "./index.css";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
+import Home from "./pages/Home.jsx";
 import Purpose from "./pages/Purpose.jsx";
 import Sample from "./pages/Sample.jsx";
 import Services from "./pages/Services.jsx";
@@ -20,9 +21,9 @@ const router = createBrowserRouter([
         path: "/",
         element: (
           <>
-            <Header selected="purpose" />
-            <MainPanel heading="Purpose">
-              <Purpose />
+            <Header />
+            <MainPanel>
+              <Home />
             </MainPanel>
           </>
         ),

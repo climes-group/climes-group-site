@@ -4,6 +4,12 @@
 }
 
 @font-face {
+  font-family: "AvenirLtNextPro";
+  src: url("assets/fonts/avenirLtProItalic.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Granjon";
   src: url("assets/fonts/Granjon.otf") format("opentype");
 }

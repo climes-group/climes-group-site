@@ -10,7 +10,6 @@ const Root = styled.footer`
   min-height: 200px;
   background-color: ${THEME.BKG};
   padding: 1.5rem;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 
