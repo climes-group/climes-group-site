@@ -1,22 +1,26 @@
+import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import climesBannerUrl from "./assets/logos/climes_group_engineering_high.jpg";
 import { PAGES, THEME } from "./utils";
-import { slide as Menu } from "react-burger-menu";
+
+const ClimesBanner = styled.div`
+  display: block;
+  img {
+    position: absolute;
+    height: 100px;
+    top: 0;
+    left: 13px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+`;
 
 const Root = styled.div`
-  padding-left: 4rem;
+  padding-left: 2rem;
   position: relative;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    right: 0;
-    background: linear-gradient(#f0efe3, #ffffff);
-    height: 50px;
-    z-index: 0;
-  }
 
   @media (max-width: 767px) {
     display: none;
@@ -25,20 +29,22 @@ const Root = styled.div`
 
 const MenuOl = styled.ol`
   position: relative;
+  top: 3em;
   right: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
-  border-bottom: solid 12px ${THEME.ACCENT};
+  border-bottom: solid 3px ${THEME.ACCENT};
   margin-bottom: 0px;
+  margin-top: 0em;
   padding-left: 0px;
   z-index: 1;
 `;
 
 const MenuLi = styled.li`
   padding: 1rem;
-  padding-left: 4rem;
+  padding-left: 2rem;
   background-clip: content-box, padding-box;
   list-style-type: none;
   line-height: 1.5;
@@ -68,6 +74,9 @@ const Header = ({ selected }) => {
   return (
     <>
       <Root>
+        <ClimesBanner>
+          <img src={climesBannerUrl} alt="Climes Banner Image" />
+        </ClimesBanner>
         <MenuOl>
           {PAGES.map((menuItem) => (
             <MenuLi key={`meni-item-${menuItem.label}`}>

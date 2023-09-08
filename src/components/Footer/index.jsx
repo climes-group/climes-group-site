@@ -1,10 +1,9 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import peoImgUrl from "../../assets/logo-peo-en.png";
-import climesUrl from "../../assets/clime_tree_trans.png";
+import climesUrl from "../../assets/logos/clime_tree_trans.png";
 import { THEME } from "../../utils";
-import Social from "./Social";
 import ContactInfo from "./ContactInfo";
-import { Link } from "react-router-dom";
 
 const Root = styled.footer`
   border-top: solid 6px ${THEME.ACCENT};
@@ -54,39 +53,45 @@ const Auth = styled.div`
 const ClimesLogo = styled.div`
   align-self: center;
   margin: 1rem;
-  width: 50px;
+
+  img {
+    height: 200px;
+  }
 `;
 
 const FlexContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: stretch;
 
   @media (max-width: 767px) {
     flex-wrap: wrap;
   }
 `;
 
+const PeoLogoPortion = (
+  <PeoLogoContainer>
+    <a href="https://www.peo.on.ca/">
+      <img src={peoImgUrl} alt="PEO Logo Image" />
+    </a>
+    <Auth>
+      Authorized by the Association of Professional Engineers of Ontario to
+      offer professional engineering services.
+    </Auth>
+  </PeoLogoContainer>
+);
+
 const Footer = () => {
   return (
     <Root>
-      <PeoLogoContainer>
-        <a href="https://www.peo.on.ca/">
-          <img src={peoImgUrl} alt="PEO Logo Image" />
-        </a>
-        <Auth>
-          Authorized by the Association of Professional Engineers of Ontario to
-          offer professional engineering services.
-        </Auth>
-      </PeoLogoContainer>
       <FlexContainer>
-        <ContactInfo />
         <ClimesLogo>
           <Link to={""}>
             <img src={climesUrl} alt="Climes Group Engineering Inc. logo" />
           </Link>
         </ClimesLogo>
-        <Social />
+        <ContactInfo />
       </FlexContainer>
     </Root>
   );

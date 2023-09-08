@@ -3,12 +3,9 @@ import styled from "styled-components";
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: right;
+  align-self: flex-start;
+  text-align: left;
   margin: 1rem;
-
-  @media (max-width: 1024px) {
-    align-self: flex-end;
-  }
 `;
 
 function ContactInfo() {

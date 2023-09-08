@@ -3,6 +3,7 @@ import Block from "../components/content/Block";
 function Purpose() {
   return (
     <div>
+      <p> Lorem ipsum</p>
       <Block>
         <h2>Heading 2-1</h2>
         <p>

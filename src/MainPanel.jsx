@@ -15,17 +15,18 @@ const Root = styled.main`
 
 const StyledH1 = styled.h1`
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: #345800;
-  padding: 0.5em 1em;
+  padding: 0em 1em;
   text-align: left;
   max-width: 50%;
   line-height: 2em;
+  font-variant: small-caps;
 `;
 
 const Container = styled.div`
-  margin: 2rem 4rem;
-  padding: 2rem;
+  margin: 0rem 4rem;
+  padding: 0rem;
   min-height: 25vh;
 
   @media (max-width: 1024px) {
