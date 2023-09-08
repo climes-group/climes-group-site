@@ -3,6 +3,18 @@ import Block from "../components/content/Block";
 function About() {
   return (
     <div>
+      <p>
+      Climes Group was established in 2023 for the purpose of advancing climate resilience in buildings. 
+      Our climate is changing, but our buildings aren’t. 
+      </p>
+      <p>
+      The climate crisis is a critical threat to our building infrastructure. 
+      We need to both <b>adapt</b> to the impacts of climate change and mitigate our emissions as fast as 
+      possible to reduce future impacts. This approach is called climate resilience. 
+      It is the only method we have to prepare ourselves for the future in a resource conscious manner.  
+      The climate resilience approach ensures all our actions achieve both mitigation and adaptation 
+      through life-cycle thinking.
+      </p>
       <Block>
         <h2>Heading 2-1</h2>
         <p>
