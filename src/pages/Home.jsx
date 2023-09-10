@@ -11,8 +11,8 @@ function Home() {
   return (
     <Root>
       <Quote>
-        The climate is <em>changing</em>, but our buildings aren't; let's do
-        something about it
+        <i>"The climate is changing, but our buildings aren't; let's do
+        something about it"</i>
       </Quote>
     </Root>
   );

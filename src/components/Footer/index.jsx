@@ -6,7 +6,7 @@ import { THEME } from "../../utils";
 import ContactInfo from "./ContactInfo";
 
 const Root = styled.footer`
-  border-top: solid 6px ${THEME.ACCENT};
+  border-top: solid 3px ${THEME.ACCENT};
   min-height: 200px;
   background-color: ${THEME.BKG};
   padding: 1.5rem;

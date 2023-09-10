@@ -3,7 +3,7 @@ import { THEME } from "../../utils";
 
 const StyledQuote = styled.blockquote`
   text-indent: 1em;
-  border-left: 40px solid ${THEME.ACCENT};
+  border-left: 40px solid ${THEME.PRIMARY};
   font-size: 2em;
   font-weight: 700;
   @supports (hanging-punctuation: first) {
