@@ -4,11 +4,11 @@ function Services() {
   return (
     <div>
       <p>
-        Climes Group follows the tripartite model of service: <u>applied services</u> to understand the problems, <u>research</u> to solve them,
-        and <u>training</u> to share the solutions.
+        Climes Group follows the tripartite evidence-based engineering: <em>applied services</em> to understand the problems, <em>research</em> to solve them,
+        and <em>training</em> to share the solutions.
         To better serve you, Climes Group has three divisions each tailored to these facets: Climes Consulting, Climes Research, and Climes Academy.
       </p>
-      <Block>
+      <Block id="consulting">
         <h2>Climes Consulting</h2>
         <p>
           Climes Consulting specializes in climate resilient buildings. We provide:
@@ -20,9 +20,9 @@ function Services() {
           <li>Climate impacted life-cycle planning</li>
         </ul>
         <p>
-          In addition, we provide the standard building engineering consulting services for new and existing buildings. Our difference is
+          In addition, we provide  standard building engineering consulting services for new and existing buildings. Our difference is
           that climate resilience is embedded into every aspect of our work.
-          We provide the standard engineering consulting services, including
+          We can help you with:
         </p>
         <ul>
           <li>concept review</li>
@@ -31,16 +31,14 @@ function Services() {
           <li>forensic investigations. </li>
         </ul>
       </Block>
-      <Block>
+      <Block id="research">
         <h2>Climes Research</h2>
         <p>
           Climes Research exists to solve problems. We are a think and <em>do</em> tank.
-        </p>
-        <p>
+
           We use our  15+ years of academic and industry research experience to ensure the solutions are pragmatic and useful.
           As practitioners, we also understand the problems the users face.
-        </p>
-        <p>
+
           Climes Research currently focuses on <em>in silico</em> research on topics ranging from:
         </p>
         <ul>
@@ -51,7 +49,7 @@ function Services() {
         </ul>
         <p>We ensure translation of our findings into practical tools, ranging from reports, guides, infographics, to web-tools and applications.</p>
       </Block>
-      <Block>
+      <Block id="academy">
         <h2>Climes Academy</h2>
         <p>
           At Climes Academy, we leverage our university, college, and corporate level training programs to provide impactful, actionable learning.
