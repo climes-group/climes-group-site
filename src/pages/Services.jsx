@@ -3,38 +3,62 @@ import Block from "../components/content/Block";
 function Services() {
   return (
     <div>
-      <p>Climes Group adheres to the advancement principle that we need Applied services to understand the problems, Research to solve the problems,
-        and Training to share the solutions.
-        Climes Group has three divisions each tailored to these facets: Climes Consulting, Climes Research, and Climes Academy.</p>
+      <p>
+        Climes Group follows the tripartite model of service: <u>applied services</u> to understand the problems, <u>research</u> to solve them,
+        and <u>training</u> to share the solutions.
+        To better serve you, Climes Group has three divisions each tailored to these facets: Climes Consulting, Climes Research, and Climes Academy.
+      </p>
       <Block>
         <h2>Climes Consulting</h2>
         <p>
-          Climes Consulting provides building engineering consulting services for new and existing buildings.
-          But unlike others, climate resilience is the starting point to all of our work.
+          Climes Consulting specializes in climate resilient buildings. We provide:
         </p>
+        <ul>
+          <li>Climate risk assessments</li>
+          <li>Climate resilient design consultation</li>
+          <li>Carbon accounting</li>
+          <li>Climate impacted life-cycle planning</li>
+        </ul>
         <p>
-          We provide the standard engineering consulting services of concept review, design development, field review and testing,
-          and forensic investigations. We also provide climate risk assessments, carbon consulting, and life-cycle planning services.
+          In addition, we provide the standard building engineering consulting services for new and existing buildings. Our difference is
+          that climate resilience is embedded into every aspect of our work.
+          We provide the standard engineering consulting services, including
         </p>
+        <ul>
+          <li>concept review</li>
+          <li>design development</li>
+          <li>field review and testing</li>
+          <li>forensic investigations. </li>
+        </ul>
       </Block>
       <Block>
         <h2>Climes Research</h2>
         <p>
-          Climes Research exists to solve problems. We are a think and do tank.
+          Climes Research exists to solve problems. We are a think and <em>do</em> tank.
         </p>
         <p>
-          We use our  15+ years of academic and industry research experience to ensure the solutions are pragmatic and useful,
-          because unlike other researchers, we’re also practitioners: we know what tools are needed to get the job done and how they are used.
+          We use our  15+ years of academic and industry research experience to ensure the solutions are pragmatic and useful.
+          As practitioners, we also understand the problems the users face.
         </p>
+        <p>
+          Climes Research currently focuses on <em>in silico</em> research on topics ranging from:
+        </p>
+        <ul>
+          <li>Hygrothermics</li>
+          <li>Material durability</li>
+          <li>Climate reliability analyses, and</li>
+          <li>Climate change impacts</li>
+        </ul>
+        <p>We ensure translation of our findings into practical tools, ranging from reports, guides, infographics, to web-tools and applications.</p>
       </Block>
       <Block>
         <h2>Climes Academy</h2>
         <p>
-          At Climes Academy, we leverage our university, college, and business level training programs to provide impactful, actionable learning.
+          At Climes Academy, we leverage our university, college, and corporate level training programs to provide impactful, actionable learning.
           We translate our expert knowledge into workshops, seminars, and training material to train you and your staff to become self-sufficient.
         </p>
-        <p>
-          "A rising tide lifts all boats"
+        <p>Our bespoke training can be catered to individual or project level needs or can be scaled up to provide a full course equivalent curriculum
+          covering topics ranging from climate science for engineers, climate resilience, building durability in a changing climate, and other relevant topics.
         </p>
       </Block>
     </div>

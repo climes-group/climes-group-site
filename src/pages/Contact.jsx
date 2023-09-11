@@ -4,9 +4,9 @@ function Contact() {
   return (
     <div>
       <block>
-        <h2>Robert Lepage| PhD, P.Eng.</h2>
-        <p>e. rob (at) climesgroup.ca</p>
-        <p>c. (226) 868.9865</p>
+        <h2>Robert Lepage | PhD, P.Eng.</h2>
+        <h3>e. rob (at) climesgroup.ca</h3>
+        <h3>c. (226) 868.9865</h3>
       </block>
     </div>
   );
