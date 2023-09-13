@@ -12,6 +12,14 @@ const StyledQuote = styled.blockquote`
       hanging-punctuation: first;
     }
   }
+
+  @media (max-width: 767px) {
+    margin: 0.5em;
+    p {
+      margin-left: 0.5em;
+      font-size: 1em;
+    }
+  }
 `;
 
 export default function Quote({ children }) {

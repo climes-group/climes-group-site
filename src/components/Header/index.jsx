@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import climesBannerUrl from "../../assets/logos/climes_group_engineering_high.jpg";
 import { PAGES, THEME } from "../../utils";
+import MobileNav from "./MobileNav.jsx";
 
 const ClimesBanner = styled.div`
   text-align: left;
@@ -28,10 +29,6 @@ const ClimesLogoMobile = styled.div`
 const Root = styled.div`
   padding-left: 2rem;
   position: relative;
-
-  @media (max-width: 767px) {
-    display: none;
-  }
 `;
 
 const MenuOl = styled.ol`
@@ -44,6 +41,10 @@ const MenuOl = styled.ol`
   margin-top: 0em;
   padding-left: 0px;
   z-index: 1;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const MenuLi = styled.li`
@@ -73,6 +74,7 @@ const Header = ({ selected }) => {
             <img src={climesBannerUrl} alt="Climes Banner Image" />
           </Link>
         </ClimesBanner>
+        <MobileNav />
         <ClimesLogoMobile></ClimesLogoMobile>
         <MenuOl>
           {PAGES.map((menuItem) => (

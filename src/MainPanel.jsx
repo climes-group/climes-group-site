@@ -4,13 +4,19 @@ const Root = styled.main`
   display: flex;
   flex-direction: column;
   padding: 2em;
-  @media (max-width: 767px) {
-    padding: 0;
-  }
+
   flex-grow: 1;
 
   h1 {
     margin-top: 1.5em;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+
+    h1 {
+      margin-top: 0em;
+    }
   }
 `;
 
