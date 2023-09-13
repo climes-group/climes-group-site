@@ -4,7 +4,7 @@ function Services() {
   return (
     <div>
       <p>
-        Climes Group follows the tripartite evidence-based engineering: <em>applied services</em> to understand the problems, <em>research</em> to solve them,
+        Climes Group follows the tripartite evidence-based engineering approach: <em>applied services</em> to understand the problems, <em>research</em> to solve them,
         and <em>training</em> to share the solutions.
         To better serve you, Climes Group has three divisions each tailored to these facets: Climes Consulting, Climes Research, and Climes Academy.
       </p>
