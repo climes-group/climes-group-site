@@ -4,17 +4,20 @@ function About() {
   return (
     <div>
 
-      <h2>Robert Lepage | PhD., P.Eng.</h2>
-      <h3>Founding Principal</h3>
-      <p>Dr. Robert Lepage, P.Eng., is a nationally recognized expert in climate change resilience for 
-        buildings. He advises on climate adaptation and mitigation pathways in existing buildings 
-        and new construction. Part of these efforts includes serving on regional, national, and 
-        international standard and guideline committees. With insights into the emerging challenges 
-        of climate change impacts on buildings based on his climate risk assessment and building 
-        science consulting experience, Dr. Lepage provides industry leading support to address 
-        climate change.  These services range from specific project support to delivering workshops, 
-        lectures, and guidance material on climate resilience principles, heuristics, and tools to
-         increase awareness and help develop solutions. </p>
+        <h2>Robert Lepage | PhD., P.Eng.</h2>
+        <h3>Founding Principal</h3>
+
+        <p>Dr. Robert Lepage, P.Eng., founded Climes Group Engineering Inc. in 2023 with the purpose of advancing climate resilience in buildings.</p>
+        <p>
+          Dr. Lepage is a nationally recognized expert in climate change resilience for
+          buildings. He advises on climate adaptation and mitigation pathways in existing buildings
+          and new construction. Part of these efforts includes serving on regional, national, and
+          international standard and guideline committees. With insights into the emerging challenges
+          of climate change impacts on buildings based on his climate risk assessment and building
+          science consulting experience, Dr. Lepage provides industry leading support to address
+          climate change.  These services range from specific project support to delivering workshops,
+          lectures, and guidance material on climate resilience principles, heuristics, and tools to
+          increase awareness and help develop solutions. </p>
       <Block>
         <h3>Key Project</h3>
         <p>

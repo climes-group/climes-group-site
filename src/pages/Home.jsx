@@ -15,7 +15,7 @@ const CenteredText = styled.p`
 function Home() {
   return (
     <Root>
-      <Quote>
+      <Quote fontSize="2em">
         <CenteredText>
           <i>The climate is changing; our buildings are not.</i>
         </CenteredText>

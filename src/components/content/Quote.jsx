@@ -3,8 +3,11 @@ import { THEME } from "../../utils";
 
 const StyledQuote = styled.blockquote`
   text-indent: 1em;
-  border-left: 40px solid ${THEME.PRIMARY};
-  font-size: 2em;
+  border-left: ${(props) =>
+    props.fontSize
+      ? `calc(${props.fontSize} / 2) solid ${THEME.PRIMARY}`
+      : "calc(1em / 2) solid ${THEME.PRIMARY}"};
+  font-size: ${(props) => props.fontSize || "2em"};
   font-weight: 700;
   @supports (hanging-punctuation: first) {
     & {
@@ -22,6 +25,6 @@ const StyledQuote = styled.blockquote`
   }
 `;
 
-export default function Quote({ children }) {
-  return <StyledQuote>{children}</StyledQuote>;
+export default function Quote({ children, fontSize }) {
+  return <StyledQuote fontSize={fontSize}>{children}</StyledQuote>;
 }
