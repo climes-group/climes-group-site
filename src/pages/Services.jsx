@@ -6,7 +6,7 @@ function Services() {
       <p>
         Climes Group follows the evidence-based model for engineering: <em>applied services</em> to understand the problems, <em>research</em> to solve them,
         and <em>training</em> to share the solutions.
-        To better serve you, Climes Group has three divisions each tailored to these facets: Climes Consulting, Climes Research, and Climes Academy.
+        To better serve you, Climes Group has three divisions each tailored to these aspects: Climes Consulting, Climes Research, and Climes Academy.
       </p>
       <Block>
         <h2>Climes Consulting</h2>
