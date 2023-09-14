@@ -6,9 +6,9 @@ export const THEME = {
 };
 
 export const PAGES = [
+  { label: "Purpose", url: "/purpose" },
   { label: "Services", url: "/services" },
   { label: "About", url: "/about" },
-  //{ label: "Purpose", url: "/purpose" },
   { label: "Contact", url: "/contact" },
   //{ label: "Sample", url: "/sample" }, // <- This is how we comment out in JS
 ];

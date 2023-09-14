@@ -3,39 +3,49 @@ import Block from "../components/content/Block";
 function About() {
   return (
     <div>
-      <h2>Purpose</h2>
-      <p>
-        Climes Group was established in 2023 for the purpose of advancing climate resilience in buildings.
-        The climate crisis is a critical threat to humanity, and we rely on our buildings for shelter from extreme weather.
-        Yet our buildings aren't designed for the future, they are built to a climate that will never occur again.
-        Our mission is to advance climate resilience for all buildings in Canada.</p>
-      <h2>Climate Resilience</h2>
-      <p>
-        We need to both <em>adapt</em> to the impacts of climate change and <em>mitigate</em> our emissions as fast as
-        possible to reduce future impacts. This approach is called <em>climate resilience</em>.
-        It is the only method we have to prepare ourselves for the future in a resource effective manner.
-        The climate resilience approach ensures all our actions achieve both mitigation and adaptation
-        through life-cycle thinking.
-      </p>
-      <h2>Services</h2>
-      <p>
-        Climes is structured to provide climate resilienec services for new and existing buildings. 
-        To best serve you, Climes Group has 3 divisions:
-      </p>
-      <Block>
-        <h2><a href="/Services#consulting">Climes Consulting</a></h2>
-        <p>
-          Where we provide building engineering consulting services, from climate risk assessments, design development, and forensics
-        </p>
 
-        <h2><a href="/Services#research">Climes Research</a></h2>
+      <h2>Robert Lepage | PhD., P.Eng.</h2>
+      <h3>Founding Principal</h3>
+      <p>Dr. Robert Lepage, P.Eng., is a nationally recognized expert in climate change resilience for buildings. He advises on climate adaptation and mitigation pathways in existing buildings and new construction. Part of these efforts includes serving on regional, national, and international standard and guideline committees. With insights into the emerging challenges of climate change impacts on buildings based on his climate risk assessment and building science consulting experience, Dr. Lepage provides industry leading support to address climate change.  These services range from specific project support to delivering workshops, lectures, and guidance material on climate resilience principles, heuristics, and tools to increase awareness and help develop solutions. </p>
+      <Block>
+        <h3>Key Project</h3>
         <p>
-          Where we address foundational and innovative research questions
+          <ul>
+            <li>
+              <a href="https://pievc.ca/2019/03/24/climate-change-vulnerability-assessment-for-nanaimo-regional-general-hospital-nrgh/" target="_blank">
+                Vancouver Island Health Authority - Nanaimo Regional General Hospital Climate Vulnerability Assessment</a></li>
+            <li>British-Columbia Climate Action Secretariat - Public Sector Organization Resilient Buildings</li>
+            <li>
+              <a href="https://www.rdh.com/wp-content/uploads/2021/07/Climate-Change-Resilience-for-Buildings-Primer.pdf" target="_blank">
+                BC Housing - Climate Change Resilience for Buildings</a></li>
+            <li>Vancouver Island Health Authority - Gorge Road Hospital Climate Impact Overheating Study</li>
+            <li>UBC Brock Commons - Mass Timber Durability Specialist</li>
+          </ul>
         </p>
-        <h2><a href="/Services#academy">Climes Academy</a></h2>
-        <p>
-          Where we translate our expert knowledge into workshops, seminars, and training material
-        </p>
+      </Block>
+      <Block>
+        <h3>Service</h3>
+        <ul>
+          <li>ISO/TC 59/SC 14 Design Life -Canadian Mirror Committee</li>
+          <li>CSA S478 Standard Committee - Member</li>
+          <li>Resilient Guidelines for Health Facility Design and Operations – Advisor</li>
+          <li>University of Waterloo Architectural Engineering Program - Lecturer</li>
+        </ul>
+      </Block>
+      <Block>
+        <h3>Membership</h3>
+        <ul>
+          <li>Professional Engineer, Professional Engineers Ontario</li>
+          <li>Professional Engineer, Professional Engineers and Geoscientists BC</li>
+        </ul>
+      </Block>
+      <Block>
+        <h3>Education</h3>
+        <ul>
+          <li>PhD., Building Science, University of Victoria</li>
+          <li>MASc., Civil Engineering, University of Waterloo</li>
+          <li>BAsc., with Distinction, Honours, Civil Engineering, University of Waterloo</li>
+        </ul>
       </Block>
 
     </div>

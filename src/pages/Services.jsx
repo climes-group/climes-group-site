@@ -4,11 +4,11 @@ function Services() {
   return (
     <div>
       <p>
-        Climes Group follows the tripartite model of evidence-based engineering: <em>applied services</em> to understand the problems, <em>research</em> to solve them,
+        Climes Group follows the evidence-based model for engineering: <em>applied services</em> to understand the problems, <em>research</em> to solve them,
         and <em>training</em> to share the solutions.
         To better serve you, Climes Group has three divisions each tailored to these facets: Climes Consulting, Climes Research, and Climes Academy.
       </p>
-      <Block id="consulting">
+      <Block>
         <h2>Climes Consulting</h2>
         <p>
           Climes Consulting specializes in climate resilient buildings. We provide:
@@ -31,7 +31,7 @@ function Services() {
           <li>forensic investigations. </li>
         </ul>
       </Block>
-      <Block id="research">
+      <Block>
         <h2>Climes Research</h2>
         <p>
           Climes Research exists to solve problems. We are a think and <em>do</em> tank.
@@ -49,7 +49,7 @@ function Services() {
         </ul>
         <p>We ensure translation of our findings into practical tools, ranging from reports, guides, infographics, to web-tools and applications.</p>
       </Block>
-      <Block id="academy">
+      <Block>
         <h2>Climes Academy</h2>
         <p>
           At Climes Academy, we leverage our university, college, and corporate level training programs to provide impactful, actionable learning.
