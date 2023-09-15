@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import climesTreeTransUrl from "../../assets/logos/clime_tree_trans.png";
-import climesBannerUrl from "../../assets/logos/climes_group_engineering_high.jpg";
+import climesTreeTransUrl from "../../assets/logos/climes_logo_trim.png"; //Shortened logo
+import climesBannerUrl from "../../assets/logos/climes_group_engineering_high.jpg"; 
 import { PAGES, THEME } from "../../utils";
 import MobileNav from "./MobileNav";
 

@@ -14,10 +14,10 @@ function ContactInfo() {
       <h3>Contact</h3>
       <div>Robert Lepage | PhD., P.Eng</div>
       <div>
-        <a href="mailto: rob@climesgroup.ca">rob@climesgroup.ca</a>
+        <a href="mailto: rob@climesgroup.ca">rob (at) climesgroup.ca</a>
       </div>
       <div>
-        <a href="tel:+12268689865">226-868-9865</a>
+        <a>226 868 9865</a>
       </div>
     </Root>
   );
