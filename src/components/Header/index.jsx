@@ -1,16 +1,39 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import climesTreeTransUrl from "../../assets/logos/clime_tree_trans.png";
 import climesBannerUrl from "../../assets/logos/climes_group_engineering_high.jpg";
 import { PAGES, THEME } from "../../utils";
-import MobileNav from "./MobileNav.jsx";
+import MobileNav from "./MobileNav";
+
+const Root = styled.div`
+  position: relative;
+  border-bottom: solid 3px ${THEME.ACCENT};
+  margin-bottom: 1em;
+`;
+
+const DesktopHeader = styled.div`
+  display: block;
+  @media (max-width: 767px) {
+    display: none;
+  }
+`;
+
+const MobileHeader = styled.div`
+  display: none;
+  height: 100px;
+  @media (max-width: 767px) {
+    display: flex;
+  }
+`;
 
 const ClimesBanner = styled.div`
   text-align: left;
   padding: 1em 0em;
+  padding-bottom: 0px;
   img {
     height: 100px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
       display: none;
     }
   }
@@ -18,17 +41,10 @@ const ClimesBanner = styled.div`
 const ClimesLogoMobile = styled.div`
   text-align: left;
   img {
-    height: 100px;
-    display: none;
-    @media (max-width: 1024px) {
-      display: block;
-    }
+    height: 80px;
+    margin: 0.5em;
+    margin-left: 1em;
   }
-`;
-
-const Root = styled.div`
-  padding-left: 2rem;
-  position: relative;
 `;
 
 const MenuOl = styled.ol`
@@ -36,7 +52,6 @@ const MenuOl = styled.ol`
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  border-bottom: solid 3px ${THEME.ACCENT};
   margin-bottom: 0px;
   margin-top: 0em;
   padding-left: 0px;
@@ -65,24 +80,36 @@ const MenuLi = styled.li`
   }
 `;
 
-const Header = ({ selected }) => {
+/**
+ * Header component that displays nav in all viewports & sizes
+ * @returns
+ */
+const Header = ({}) => {
   return (
     <>
       <Root>
-        <ClimesBanner>
-          <Link to="/">
-            <img src={climesBannerUrl} alt="Climes Banner Image" />
-          </Link>
-        </ClimesBanner>
-        <MobileNav />
-        <ClimesLogoMobile></ClimesLogoMobile>
-        <MenuOl>
-          {PAGES.map((menuItem) => (
-            <MenuLi key={`meni-item-${menuItem.label}`}>
-              <Link to={menuItem.url}>{menuItem.label}</Link>
-            </MenuLi>
-          ))}
-        </MenuOl>
+        <DesktopHeader>
+          <ClimesBanner>
+            <Link to="/">
+              <img src={climesBannerUrl} alt="Climes Banner Image" />
+            </Link>
+          </ClimesBanner>
+          <MenuOl>
+            {PAGES.map((menuItem) => (
+              <MenuLi key={`menu-item-${menuItem.label}`}>
+                <Link to={menuItem.url}>{menuItem.label}</Link>
+              </MenuLi>
+            ))}
+          </MenuOl>
+        </DesktopHeader>
+        <MobileHeader>
+          <ClimesLogoMobile>
+            <Link to="/">
+              <img src={climesTreeTransUrl} alt="Climes Banner Image" />
+            </Link>
+          </ClimesLogoMobile>
+          <MobileNav />
+        </MobileHeader>
       </Root>
     </>
   );

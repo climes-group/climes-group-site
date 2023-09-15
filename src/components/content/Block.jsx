@@ -6,7 +6,7 @@ const Root = styled.div`
   background-color: ${THEME.BKG};
   padding: 0.5em 2em;
 
-  margin-top: 1em;
+  margin: 1em 0em;
   height: ${(props) => props?.height || "auto"};
   width: ${(props) => props?.width || "auto"};
 

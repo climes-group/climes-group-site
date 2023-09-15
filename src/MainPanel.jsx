@@ -12,7 +12,7 @@ const Root = styled.main`
   }
 
   @media (max-width: 767px) {
-    padding: 0;
+    padding: 1em;
 
     h1 {
       margin-top: 0em;
