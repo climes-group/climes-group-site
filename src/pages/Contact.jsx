@@ -3,11 +3,13 @@ import Block from "../components/content/Block";
 function Contact() {
   return (
     <div>
-      <block>
+      <Block>
         <h2>Robert Lepage | PhD, P.Eng.</h2>
-        <h3>e: <a href="mailto: rob@climesgroup.ca">rob (at) climesgroup.ca</a></h3>
-        <h3>c: 226 868 9865</h3>
-      </block>
+        <div>
+          e: <a href="mailto: rob@climesgroup.ca">rob (at) climesgroup.ca</a>
+        </div>
+        <div>c: 226 868 9865</div>
+      </Block>
     </div>
   );
 }

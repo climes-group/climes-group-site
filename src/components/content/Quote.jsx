@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { THEME } from "../../utils";
 
 const StyledQuote = styled.blockquote`
-  text-indent: 1em;
+  text-indent: 1rem;
   border-left: ${(props) =>
     props.fontSize
       ? `calc(${props.fontSize} / 2) solid ${THEME.PRIMARY}`
@@ -15,6 +15,9 @@ const StyledQuote = styled.blockquote`
       hanging-punctuation: first;
     }
   }
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
 
   @media (max-width: 767px) {
     margin: 0.5em;
