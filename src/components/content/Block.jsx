@@ -11,7 +11,13 @@ const Root = styled.div`
   width: ${(props) => props?.width || "auto"};
 
   h2 {
-    text-align: left;
+    display: inline-block;
+    border-bottom: 0.5rem solid ${THEME.ACCENT};
+  }
+
+  h3 {
+    display: inline-block;
+    border-bottom: 0.3rem solid ${THEME.ACCENT};
   }
 
   p {
