@@ -55,7 +55,7 @@ function About() {
         <ul>
           <li>PhD., Building Science, University of Victoria</li>
           <li>MASc., Civil Engineering, University of Waterloo</li>
-          <li>BAsc., with Distinction, Honours, Civil Engineering, University of Waterloo</li>
+          <li>BASc., with Distinction, Honours, Civil Engineering, University of Waterloo</li>
         </ul>
       </Block>
 
