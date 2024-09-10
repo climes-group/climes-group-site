@@ -5,8 +5,8 @@ const StyledQuote = styled.blockquote`
   text-indent: 1em;
   border-left: ${(props) =>
     props.fontSize
-      ? `calc(${props.fontSize} / 2) solid ${THEME.PRIMARY}`
-      : "calc(1em / 2) solid ${THEME.PRIMARY}"};
+      ? `calc(${props.fontSize} / 4) solid ${THEME.PRIMARY}`
+      : "calc(1em / 4) solid ${THEME.PRIMARY}"};
   font-size: ${(props) => props.fontSize || "2em"};
   font-weight: 700;
   @supports (hanging-punctuation: first) {
