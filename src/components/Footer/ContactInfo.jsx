@@ -14,7 +14,7 @@ function ContactInfo() {
       <h3>Contact</h3>
       <div>Robert Lepage | PhD., P.Eng</div>
       <div>
-        <a href="mailto: rob@climesgroup.ca">rob (at) climesgroup.ca</a>
+        <a href="mailto: rob@climesgroup.ca">rob@climesgroup.ca</a>
       </div>
       <div>
         <a>226 868 9865</a>
