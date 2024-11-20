@@ -8,6 +8,8 @@ import "./index.css";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
+// gotta import the new page
+import NewPage from "./pages/NewPage.jsx";
 import Purpose from "./pages/Purpose.jsx";
 import Sample from "./pages/Sample.jsx";
 import Services from "./pages/Services.jsx";
@@ -79,6 +81,18 @@ const router = createBrowserRouter([
             <Header selected="sample" />
             <MainPanel heading="Sample Page">
               <Sample />
+            </MainPanel>
+          </>
+        ),
+      },
+      // define a new page here
+      {
+        path: "newpage",
+        element: (
+          <>
+            <Header selected="newpage" />
+            <MainPanel heading="Sample New Page">
+              <NewPage />
             </MainPanel>
           </>
         ),
