@@ -36,7 +36,7 @@ function Services() {
         <p>
           Climes Research exists to solve problems. We are a think and <em>do</em> tank.
 
-          We use our  15+ years of academic and industry research experience to ensure the solutions are pragmatic and useful.
+          We use our extensive academic and industry research experience to ensure the solutions are pragmatic and useful.
           As practitioners, we also understand the problems the users face.
 
           Climes Research currently focuses on <em>in silico</em> research on topics ranging from:

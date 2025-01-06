@@ -10,8 +10,8 @@
 }
 
 @font-face {
-  font-family: "Granjon";
-  src: url("assets/fonts/Granjon.otf") format("opentype");
+  font-family: "AvenirLtProItalic";
+  src: url("assets/fonts/avenirLtProItalic.otf") format("opentype");
 }
 
 :root {
@@ -77,7 +77,7 @@ ul,li {
   font-size: inherit; /* Inherit font size from the global paragraph text */
   line-height: inherit; /* Inherit line height from the global paragraph text */
   color: inherit; /* Inherit text color from the global paragraph text */
-  font-family: Granjon, Helvetica, Arial, sans-serif;
+  font-family:   "AvenirLtNextPro", Helvetica, Arial, sans-serif;
 }
 
 button {
@@ -115,7 +115,7 @@ button:focus-visible {
 p {
   color: black;
   text-align: left;
-  font-family: Granjon, Helvetica, Arial, sans-serif;
+  font-family: "AvenirLtNextPro", Helvetica, Arial, sans-serif;
 
   @media (max-width: 767px) {
     margin-left: 2em;
