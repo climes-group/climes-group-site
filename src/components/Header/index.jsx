@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import climesBannerUrl from "../../assets/logos/climes_group_engineering_high.jpg";
 import climesTreeTransUrl from "../../assets/logos/climes_logo_trim.png"; //Shortened logo
-import climesBannerUrl from "../../assets/logos/climes_group_engineering_high.jpg"; 
 import { PAGES, THEME } from "../../utils";
 import MobileNav from "./MobileNav";
 
@@ -9,6 +9,7 @@ const Root = styled.div`
   position: relative;
   border-bottom: solid 3px ${THEME.ACCENT};
   margin-bottom: 1em;
+  background-color: var(--colour-bkg);
 `;
 
 const DesktopHeader = styled.div`
@@ -76,7 +77,7 @@ const MenuLi = styled.li`
 
   a {
     text-decoration: none;
-    color: ${THEME.PRIMARY};
+    color: var(--colour-link);
   }
 `;
 

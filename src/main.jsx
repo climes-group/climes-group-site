@@ -9,7 +9,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
 import Purpose from "./pages/Purpose.jsx";
-import Sample from "./pages/Sample.jsx";
+import Sample from "./pages/Sample2.jsx";
 import Services from "./pages/Services.jsx";
 
 const router = createBrowserRouter([

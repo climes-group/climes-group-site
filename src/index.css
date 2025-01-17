@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "AvenirLtNextPro";
   src: url("assets/fonts/avenirLtPro.otf") format("opentype");
@@ -12,6 +16,18 @@
 @font-face {
   font-family: "AvenirLtProItalic";
   src: url("assets/fonts/avenirLtProItalic.otf") format("opentype");
+}
+.light {
+  --colour-bkg: #fff;
+  --colour-header-bkg: #345800;
+  --colour-text: #000;
+  --colour-accent: #e2b046;
+}
+.dark {
+  --colour-bkg: #121212;
+  --colour-header-bkg: #1a1a1a;
+  --colour-text: #fff;
+  --colour-accent: #90291b;
 }
 
 :root {
@@ -33,7 +49,7 @@
 
 a {
   font-weight: 500;
-  color: rgb(52, 88, 0);
+  color: #fff;
   text-decoration: inherit;
 }
 a:hover {
@@ -47,7 +63,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  align-content:center;
+  align-content: center;
 }
 
 h2 {
@@ -58,26 +74,27 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  text-align:left;
+  text-align: left;
 }
 
 h3 {
   display: block;
-  font-size: 1.0em;
+  font-size: 1em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  text-align:left;
+  text-align: left;
 }
 
-ul,li {
+ul,
+li {
   list-style-type: disc; /* Specify the bullet point style you prefer */
   text-align: left; /* Left-align the text */
   font-size: inherit; /* Inherit font size from the global paragraph text */
   line-height: inherit; /* Inherit line height from the global paragraph text */
   color: inherit; /* Inherit text color from the global paragraph text */
-  font-family:   "AvenirLtNextPro", Helvetica, Arial, sans-serif;
+  font-family: "AvenirLtNextPro", Helvetica, Arial, sans-serif;
 }
 
 button {
@@ -113,11 +130,34 @@ button:focus-visible {
 }
 
 p {
-  color: black;
   text-align: left;
   font-family: "AvenirLtNextPro", Helvetica, Arial, sans-serif;
 
   @media (max-width: 767px) {
     margin-left: 2em;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --colour-bkg: #fff;
+    --colour-bkg-2: #f0efe3;
+    --colour-header-bkg: #345800;
+    --colour-text: #000;
+    --colour-link: #345800;
+    --colour-accent: #e2b046;
+    background-color: var(--colour-bkg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --colour-bkg: #282828;
+    --colour-bkg-2: #575757;
+    --colour-header-bkg: #1a1a1a;
+    --colour-text: #fff;
+    --colour-accent: #e2b046;
+    color: var(--colour-text);
+    background-color: var(--colour-bkg);
   }
 }

@@ -9,6 +9,7 @@ const StyledQuote = styled.blockquote`
       : "calc(1em / 4) solid ${THEME.PRIMARY}"};
   font-size: ${(props) => props.fontSize || "2em"};
   font-weight: 700;
+  padding: 2rem 0;
   @supports (hanging-punctuation: first) {
     & {
       text-indent: 0;
