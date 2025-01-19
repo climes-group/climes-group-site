@@ -17,17 +17,25 @@
   font-family: "AvenirLtProItalic";
   src: url("assets/fonts/avenirLtProItalic.otf") format("opentype");
 }
+
 .light {
   --colour-bkg: #fff;
+  --colour-bkg-2: #f0efe3;
   --colour-header-bkg: #345800;
   --colour-text: #000;
+  --colour-link: #345800;
   --colour-accent: #e2b046;
+  color: var(--colour-text);
+  background-color: var(--colour-bkg);
 }
 .dark {
-  --colour-bkg: #121212;
+  --colour-bkg: #282828;
+  --colour-bkg-2: #575757;
   --colour-header-bkg: #1a1a1a;
-  --colour-text: #fff;
-  --colour-accent: #90291b;
+  --colour-text: #f0efe3;
+  --colour-accent: #e2b046;
+  color: var(--colour-text);
+  background-color: var(--colour-bkg);
 }
 
 :root {
@@ -37,20 +45,20 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #224352;
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
 }
 
 a {
   font-weight: 500;
-  color: #fff;
-  text-decoration: inherit;
+  color: var(--colour-link);
+  text-decoration: underline;
 }
 a:hover {
   color: #535bf2;
@@ -99,34 +107,21 @@ li {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid var(--colour-text);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--colour-accent);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #f0efe3;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 p {
@@ -135,29 +130,5 @@ p {
 
   @media (max-width: 767px) {
     margin-left: 2em;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --colour-bkg: #fff;
-    --colour-bkg-2: #f0efe3;
-    --colour-header-bkg: #345800;
-    --colour-text: #000;
-    --colour-link: #345800;
-    --colour-accent: #e2b046;
-    background-color: var(--colour-bkg);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --colour-bkg: #282828;
-    --colour-bkg-2: #575757;
-    --colour-header-bkg: #1a1a1a;
-    --colour-text: #fff;
-    --colour-accent: #e2b046;
-    color: var(--colour-text);
-    background-color: var(--colour-bkg);
   }
 }

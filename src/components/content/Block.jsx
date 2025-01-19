@@ -4,7 +4,7 @@ const Root = styled.div`
   display: block;
   background-color: var(--colour-bkg-2);
   padding: 0.5em 2em;
-  margin: 1em 0em;
+  margin: 2em 0em;
   height: ${(props) => props?.height || "auto"};
   width: ${(props) => props?.width || "auto"};
   border-radius: 8px; /*Optional:Rounded*/

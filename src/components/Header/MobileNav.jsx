@@ -24,7 +24,7 @@ const MobileOnly = styled.div`
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: rgb(52, 88, 0);
+    background: var(--colour-accent);
   }
 
   /* Color/shape of burger icon bars on hover*/

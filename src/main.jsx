@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import MainPanel from "./MainPanel.jsx";
 import Header from "./components/Header/index.jsx";
+import { ThemeProvider } from "./containers/ThemeProvider.jsx";
 import "./index.css";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -89,6 +90,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>,
 );

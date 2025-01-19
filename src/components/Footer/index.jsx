@@ -7,6 +7,9 @@ const Root = styled.footer`
   border-top: solid 3px var(--colour-accent);
   min-height: 200px;
   background-color: var(--colour-bkg-2);
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
