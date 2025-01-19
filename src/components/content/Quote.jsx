@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import { THEME } from "../../utils";
 
 const StyledQuote = styled.blockquote`
   text-indent: 1em;
   border-left: ${(props) =>
     props.fontSize
-      ? `calc(${props.fontSize} / 4) solid ${THEME.PRIMARY}`
-      : "calc(1em / 4) solid ${THEME.PRIMARY}"};
+      ? `calc(${props.fontSize} / 4) solid var(--colour-accent)`
+      : "calc(1em / 4) solid var(--colour-accent)"};
   font-size: ${(props) => props.fontSize || "2em"};
   font-weight: 700;
+  padding: 2rem 0;
+  margin: 5rem 0;
   @supports (hanging-punctuation: first) {
     & {
       text-indent: 0;

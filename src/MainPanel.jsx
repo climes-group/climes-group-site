@@ -29,6 +29,7 @@ const StyledH1 = styled.h1`
   max-width: 50%;
   line-height: 2em;
   font-variant: small-caps;
+  border-radius: 8px;
 `;
 
 const Container = styled.div`
